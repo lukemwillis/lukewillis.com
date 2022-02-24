@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+
+:root {
+  --background: #090221;
+  --secondary-background: #000000;
+  --foreground: #f5f5f5;
+  --secondary-foreground: #bcbcbc;
+  --accent: #ffcf21;
+}
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  background: var(--background);
+  color: var(--foreground);
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  color: var(--foreground);
+}
+a:visited {
+  color: var(--secondary-foreground);
+}
+.cta {
+  background-color: var(--accent);
+  color: var(--background);
+  display: block;
+  margin-top: 1.5em;
+  padding: 0.5em 0 0.4em 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 0 1.45rem 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  background-color: #bcbcbc;
+  height: 1px;
+  border: 0;
+  margin: 2em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  background: var(--secondary-background);
+  color: var(--foreground);
+  margin: 0;
+}
+* {
+  box-sizing: inherit;
+}
+*:before {
+  box-sizing: inherit;
+}
+*:after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  color: inherit;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+}
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 1.62671rem;
+}
+h3 {
+  font-size: 1.38316rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.85028rem;
+}
+h6 {
+  font-size: 0.78405rem;
+}
+ol,
+ul {
+  margin: 1.45em 0 0 1.45em;
+  padding: 0;
+  list-style-position: outside;
+  list-style-image: none;
+}
+p {
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+p:last-of-type {
+  margin-bottom: 0;
+}
+li {
+  margin-bottom: calc(1.45rem / 2);
+}
+ol li, ul li {
+  padding-left: 0;
+}
+li > ol, li > ul {
+  margin-left: 1.45rem;
+  margin-bottom: calc(1.45rem / 2);
+  margin-top: calc(1.45rem / 2);
+}
+code {
+  padding: 0.5em;
+  background-color: var(--secondary-background);
+  font-size: 1.25rem;
+  border-radius: 0.25em;
+}
+
+@media (min-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,58 @@
+import React from "react";
+import styled from "styled-components";
+import lwLogo from "../images/icon.svg";
+import tkpLogo from "../images/tkp.svg";
+import SEO from "../components/seo";
+import SocialIcons from "../components/socialIcons";
+import "./layout.css";
+
+const Container = styled.main`
+  padding: 1em;
+  max-width: 40em;
+  margin: 0 auto;
+`;
+
+export default function Layout({ children, pageContext }) {
+  return (
+    <>
+      <SEO title={pageContext.frontmatter && pageContext.frontmatter.title} />
+      <Container style={{ minHeight: "100vh" }}>
+        <main style={{ marginTop: "10vh" }}>{children}</main>
+      </Container>
+      <footer>
+        <Container>
+          <div
+            style={{
+              paddingBottom: "1rem",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <a href="/">
+              <img alt="Luke Willis Logo" src={lwLogo} width={40} height={40} />
+            </a>
+            <a href="//thekoinpress.com" style={{ marginLeft: '2em' }}>
+              <img alt="The Koin Press" src={tkpLogo} width={48} height={48} />
+            </a>
+          </div>
+          <p>
+            The opinions expressed herein are my own personal opinions and do
+            not represent my employer's view in any way.
+          </p>
+          <div
+            style={{
+              paddingBottom: "1rem",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <p>© {new Date().getFullYear()}, Luke Willis</p> <SocialIcons />
+          </div>
+          <p style={{ textAlign: "center" }}>👋</p>
+        </Container>
+      </footer>
+    </>
+  );
+}

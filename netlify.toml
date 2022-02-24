@@ -1,0 +1,5 @@
+[build]
+  publish = "public"
+  command = "npm run build"
+[context.production]
+  environment = { GA_TRACKING_ID = "UA-152898515-1" }

@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: "lukewillis.com",
+    author: "Luke Willis",
+    twitterUsername: "lukemwillis",
+    linkedinUsername: "lukemwillis",
+    stackOverflowUserId: "2479481",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
@@ -9,7 +13,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "UA-152898515-1",
+        trackingId: process.env.GA_TRACKING_ID || "IN-DEV",
+        anonymize: true,
+        respectDNT: true,
       },
     },
     "gatsby-plugin-react-helmet",
@@ -17,11 +23,16 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/icon.svg",
       },
     },
     "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        icon: "src/images/icon.svg",
+      },
+    },
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
