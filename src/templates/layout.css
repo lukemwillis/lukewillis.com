@@ -51,10 +51,7 @@ a {
   -webkit-text-decoration-skip: objects;
   color: var(--foreground);
 }
-a:visited {
-  color: var(--secondary-foreground);
-}
-.cta {
+a.cta {
   background-color: var(--accent);
   color: var(--background);
   display: block;
@@ -63,6 +60,12 @@ a:visited {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
+}
+a:visited {
+  color: var(--secondary-foreground);
+}
+a.cta:visited {
+  color: var(--background);
 }
 sub,
 sup {
