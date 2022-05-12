@@ -23,7 +23,6 @@ export default function Layout({ children, pageContext }) {
         <Container>
           <div
             style={{
-              paddingBottom: "1rem",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -33,13 +32,9 @@ export default function Layout({ children, pageContext }) {
               <img alt="Luke Willis Logo" src={lwLogo} width={40} height={40} />
             </a>
             <a href="//thekoinpress.com" style={{ marginLeft: '2em' }}>
-              <img alt="The Koin Press" src={tkpLogo} width={48} height={48} />
+              <img alt="The Koin Press Logo" src={tkpLogo} width={48} height={48} />
             </a>
           </div>
-          <p>
-            The opinions expressed herein are my own personal opinions and do
-            not represent my employer's view in any way.
-          </p>
           <div
             style={{
               paddingBottom: "1rem",
