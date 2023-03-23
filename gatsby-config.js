@@ -8,7 +8,6 @@ module.exports = {
     stackOverflowUserId: "2479481",
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     {

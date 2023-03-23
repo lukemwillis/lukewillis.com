@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import lwLogo from "../images/icon.svg";
 import tkpLogo from "../images/tkp.svg";
+import burnkoinLogo from "../images/burnkoin.svg";
+import kapLogo from "../images/kap.svg";
 import SEO from "../components/seo";
 import SocialIcons from "../components/socialIcons";
 import "./layout.css";
@@ -31,8 +33,29 @@ export default function Layout({ children, pageContext }) {
             <a href="/">
               <img alt="Luke Willis Logo" src={lwLogo} width={40} height={40} />
             </a>
-            <a href="//thekoinpress.com" style={{ marginLeft: '2em' }}>
-              <img alt="The Koin Press Logo" src={tkpLogo} width={48} height={48} />
+            <a href="//thekoinpress.com" style={{ marginLeft: "2em" }}>
+              <img
+                alt="The Koin Press Logo"
+                src={tkpLogo}
+                width={48}
+                height={48}
+              />
+            </a>
+            <a href="//burnkoin.com" style={{ marginLeft: "2em" }}>
+              <img
+                alt="BurnKoin Logo"
+                src={burnkoinLogo}
+                width={48}
+                height={48}
+              />
+            </a>
+            <a href="//kap.domains" style={{ marginLeft: "2em" }}>
+              <img
+                alt="KAP Logo"
+                src={kapLogo}
+                width={132}
+                height={48}
+              />
             </a>
           </div>
           <div
