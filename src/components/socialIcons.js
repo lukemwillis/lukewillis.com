@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { FaStackOverflow, FaLinkedinIn, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaStackOverflow, FaLinkedinIn, FaXTwitter } from "react-icons/fa6"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const SocialIcons = () => {
@@ -12,6 +12,7 @@ const SocialIcons = () => {
       query {
         site {
           siteMetadata {
+            githubUsername
             twitterUsername
             linkedinUsername
             stackOverflowUserId
@@ -21,26 +22,36 @@ const SocialIcons = () => {
     `
   )
   return (
-    <div>
+    <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      gap: "1em"
+    }}>
       <OutboundLink
         target="_blank"
-        href={`https://twitter.com/${siteMetadata.twitterUsername}`}
+        href={`https://github.com/${siteMetadata.githubUsername}`}
       >
-        <FaTwitter size="1.5rem" />
+        <FaGithub size="1.5rem" />
       </OutboundLink>
       <OutboundLink
         target="_blank"
         href={`https://linkedin.com/in/${siteMetadata.linkedinUsername}`}
-        style={{ marginLeft: "1em" }}
       >
         <FaLinkedinIn size="1.5rem" />
       </OutboundLink>
       <OutboundLink
         target="_blank"
         href={`https://stackoverflow.com/users/${siteMetadata.stackOverflowUserId}`}
-        style={{ marginLeft: "1em" }}
       >
         <FaStackOverflow size="1.5rem" />
+      </OutboundLink>
+      <OutboundLink
+        target="_blank"
+        href={`https://twitter.com/${siteMetadata.twitterUsername}`}
+      >
+        <FaXTwitter size="1.5rem" />
       </OutboundLink>
     </div>
   )

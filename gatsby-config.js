@@ -3,6 +3,7 @@ module.exports = {
     siteUrl: "https://lukewillis.com",
     title: "Luke Willis",
     author: "Luke Willis",
+    githubUsername: "lukemwillis",
     twitterUsername: "lukemwillis",
     linkedinUsername: "lukemwillis",
     stackOverflowUserId: "2479481",
@@ -23,24 +24,24 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.svg",
+        icon: "src/assets/icon.svg",
       },
     },
     "gatsby-plugin-mdx",
     {
       resolve: "gatsby-plugin-sharp",
       options: {
-        icon: "src/images/icon.svg",
+        icon: "src/assets/icon.svg",
       },
     },
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: "assets",
+        path: "./src/assets/",
       },
-      __key: "images",
+      __key: "assets",
     },
     {
       resolve: "gatsby-source-filesystem",

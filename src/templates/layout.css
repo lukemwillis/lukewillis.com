@@ -11,7 +11,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Work Sans', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -61,11 +61,46 @@ a.cta {
   text-decoration: none;
   font-weight: bold;
 }
+a.header-cta {
+  background-color: var(--accent);
+  color: var(--background);
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
 a:visited {
   color: var(--secondary-foreground);
 }
 a.cta:visited {
   color: var(--background);
+}
+div.card {
+  box-shadow:  0.5em 0.5em 1em var(--background), 0 0 1em #444;
+  padding: 0.5em;
+  flex: 1 1 300px;
+}
+div.card > a {
+  position: relative;
+  text-decoration: none;
+}
+div.card:hover {
+  box-shadow: 0 0 0 0.5em var(--accent);
+}
+div.card > a > * {
+  margin: 0;
+  display: inline-block;
+}
+div.card .hero {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center top;
+  filter: blur(2px);
+}
+div.card .icon {
+  float: right;
+  height: 1.2rem;
 }
 sub,
 sup {
@@ -85,9 +120,11 @@ img {
   max-width: 100%;
   padding: 0;
   margin: 0 0 1.45rem 0;
+  display: block;
 }
 svg:not(:root) {
   overflow: hidden;
+  display: block;
 }
 figure {
   margin: 1em 40px;
@@ -185,16 +222,16 @@ code {
 
 @media (min-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media (min-width: 640px) {
   html {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 @media (min-width: 1024px) {
   html {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
