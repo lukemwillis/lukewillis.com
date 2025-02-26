@@ -20,23 +20,9 @@ export default function Carousel() {
       }}
     >
       <div class="card">
-        <OutboundLink target="_blank" href="//thekoinpress.com">
-          <img class="hero" alt="Newsletter site preview" src={newsletterSite} />
-          <h4 style={{ margin: 0 }}>Daily newsletter</h4>
-          <img class="icon" alt="The Koin Press Logo" src={tkpLogo} />
-        </OutboundLink>
-      </div>
-      <div class="card">
-        <OutboundLink target="_blank" href="//podcast.thekoinpress.com">
-          <img class="hero" alt="Podcast site preview" src={podcastSite} />
-          <h4>Weekly podcast</h4>
-          <img class="icon" alt="The Koin Press Logo" src={tkpLogo} />
-        </OutboundLink>
-      </div>
-      <div class="card">
         <OutboundLink target="_blank" href="//kap.domains">
           <img class="hero" alt="KAP site preview" src={kapSite} />
-          <h4>KAP Name Service</h4>
+          <h4 style={{ margin: 0; }}>KAP Name Service</h4>
           <img class="icon" alt="KAP Logo" src={kapLogo} />
         </OutboundLink>
       </div>
@@ -50,7 +36,21 @@ export default function Carousel() {
       <div class="card">
         <OutboundLink target="_blank" href="//nft.thekoinpress.com">
           <img class="hero" alt="NFT site preview" src={nftSite} />
-          <h4>Press Badge NFTs</h4>
+          <h4>Press Badge NFT Minting Site</h4>
+          <img class="icon" alt="The Koin Press Logo" src={tkpLogo} />
+        </OutboundLink>
+      </div>
+      <div class="card">
+        <OutboundLink target="_blank" href="//thekoinpress.com">
+          <img class="hero" alt="Newsletter site preview" src={newsletterSite} />
+          <h4>Daily newsletter</h4>
+          <img class="icon" alt="The Koin Press Logo" src={tkpLogo} />
+        </OutboundLink>
+      </div>
+      <div class="card">
+        <OutboundLink target="_blank" href="//podcast.thekoinpress.com">
+          <img class="hero" alt="Podcast site preview" src={podcastSite} />
+          <h4>Weekly podcast</h4>
           <img class="icon" alt="The Koin Press Logo" src={tkpLogo} />
         </OutboundLink>
       </div>
