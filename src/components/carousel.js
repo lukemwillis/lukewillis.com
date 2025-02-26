@@ -22,7 +22,7 @@ export default function Carousel() {
       <div class="card">
         <OutboundLink target="_blank" href="//kap.domains">
           <img class="hero" alt="KAP site preview" src={kapSite} />
-          <h4 style={{ margin: 0; }}>KAP Name Service</h4>
+          <h4>KAP Name Service</h4>
           <img class="icon" alt="KAP Logo" src={kapLogo} />
         </OutboundLink>
       </div>
